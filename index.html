@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Планировщик</title>
+  </head>
+  <body>
+    <div class="container">
+      <main class="main">
+        <div class="menu">
+          <h3 class="menu__title">Menu</h3>
+          <input
+            placeholder="Поиск по заголовку"
+            type="text"
+            class="menu__search"
+          />
+          <ul class="menu__list">
+            <a id="add_task_btn" href="#!" class="menu__item"
+              ><img src="images/add-note-svgrepo-com.svg" alt="" />Добавить</a
+            >
+            <a href="#!" class="menu__item menu__item__remove"
+              ><img src="images/delete-svgrepo-com.svg" alt="" />Удалить всё</a
+            >
+          </ul>
+        </div>
+        <div class="cards">
+          <div class="cards__title_and__add">
+
+            <div class="cards__title">Sticky Wall</div>
+            <div class="card__add">
+              <img class="card__add__img" src="images/plus-svgrepo-com (1).svg" alt="">
+            </div>
+          </div>
+          <input
+            placeholder="Поиск по заголовку"
+            type="text"
+            class="menu__search menu__search__mobile"
+          />
+          <div class="cards__list">
+            <div class="card">
+              <h2 class="card__title">Заголовок</h2>
+              <p class="card__text">Ваша первая заметка</p>
+              <button class="card__close-btn"><img class="card__close-btn-img" src="images/delete-left-svgrepo-com.svg" alt=""></button>
+            </div>
+          </div>
+          
+        </div>
+      </main>
+      <aside class="popup">
+        <div class="popup__body">
+          <div class="popup__content">
+            <div class="popup__card">
+              <input type="text" class="popup__title" placeholder="Заголовок" />
+              <textarea
+                name=""
+                class="popup__textarea"
+                id="textarea"
+                cols="30"
+                rows="10"
+                placeholder="Описание"
+              ></textarea>
+              <button class="popup__btn">Добавить</button>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
